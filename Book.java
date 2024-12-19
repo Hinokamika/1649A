@@ -49,13 +49,12 @@ public class Book {
     }
 
     public String toString() {
-        return "Book{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", author='" + author + '\'' +
-                ", Stockquantity=" + Stockquantity +
-                ", price=" + price +
-                '}';
+        return 
+                id +
+                "," + name +
+                "," + author +
+                "," + Stockquantity +
+                "," + price ;
     }
 }
 
