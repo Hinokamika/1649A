@@ -2,14 +2,14 @@ public class Book {
     private int id;
     private String name;
     private String author;
-    private int Stockquantity;
+    private int stockQuantity;
     private double price;
 
-    public Book(int id, String name, String author, int Stockquantity, double price) {
+    public Book(int id, String name, String author, int stockQuantity, double price) {
         this.id = id;
         this.name = name;
         this.author = author;
-        this.Stockquantity = Stockquantity;
+        this.stockQuantity = stockQuantity;
         this.price = price;
     }
 
@@ -26,35 +26,19 @@ public class Book {
     }
 
     public int getQuantity() {
-        return Stockquantity;
+        return stockQuantity;
     }
 
     public double getPrice() {
         return price;
     }
 
-    public void setQuantity(int Stockquantity) {
-        this.Stockquantity = Stockquantity;
+    public void setQuantity(int stockQuantity) {
+        this.stockQuantity = stockQuantity;
     }
 
-    public boolean inStock(int quantity) {
-        if (Stockquantity >= quantity) {
-            Stockquantity -= quantity;
-            return true;
-        }else {
-            System.out.println("Sorry, the book is out of stock");
-            return false;
-        }
-        
-    }
-
+    @Override
     public String toString() {
-        return 
-                id +
-                "," + name +
-                "," + author +
-                "," + Stockquantity +
-                "," + price ;
+        return id + "," + name + "," + author + "," + stockQuantity + "," + price;
     }
 }
-

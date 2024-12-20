@@ -20,6 +20,10 @@ public class BookStore {
         return books;
     }
 
+    public List<Book> getBooks() {
+        return books;
+    }
+
     public void displayBooks() {
         System.out.println("Books available in the store:");
         for (Book book : books) {
